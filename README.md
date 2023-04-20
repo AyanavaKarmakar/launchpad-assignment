@@ -3,7 +3,7 @@
 1. Clone the repository
 
 ```bash
-git clone
+git clone https://github.com/AyanavaKarmakar/launchpad-assignment.git
 ```
 
 2. Install dependencies
