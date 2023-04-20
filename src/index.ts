@@ -7,12 +7,14 @@ import "dotenv/config";
 import { json } from "body-parser";
 import cors from "cors";
 import { connectDB } from "./db/connect";
+import { programRoutes } from "./routes";
 
 const app = express();
 app.use(json());
 app.use(cors);
 
 // routes
+app.use("/api/v1", programRoutes);
 
 // handle errors
 app.use(
